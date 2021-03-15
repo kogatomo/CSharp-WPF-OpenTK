@@ -1,0 +1,15 @@
+﻿<Window x:Class="MouseAction.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MouseAction"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <WindowsFormsHost x:Name="openGLHost" Margin="0,0,250,0"/>
+        <CheckBox Content="Absolute coordinate system" HorizontalAlignment="Left" Margin="548,10,0,0" VerticalAlignment="Top" Checked="AbsoluteCoordinateSystem_Checked" Unchecked="AbsoluteCoordinateSystem_UnChecked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="548,36,0,0" TextWrapping="Wrap" Text="[Notice] Hold down the ctrl key and move the mouse." VerticalAlignment="Top" Height="375" Width="235"/>
+
+    </Grid>
+</Window>
