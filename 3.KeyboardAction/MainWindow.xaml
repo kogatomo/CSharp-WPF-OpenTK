@@ -1,0 +1,19 @@
+﻿<Window x:Class="KeyboardAction.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyboardAction"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="479*"/>
+            <ColumnDefinition Width="313*"/>
+        </Grid.ColumnDefinitions>
+        <WindowsFormsHost x:Name="openGLHost" Margin="0,0,250,0" Grid.ColumnSpan="2"/>
+        <CheckBox Content="Absolute coordinate system" Margin="0,10,52,0" VerticalAlignment="Top" Checked="AbsoluteCoordinateSystem_Checked" Unchecked="AbsoluteCoordinateSystem_UnChecked" HorizontalAlignment="Right" Width="193" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Right" Height="282" Margin="0,40,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" IsEnabled="False" Grid.Column="1" Text="x: rotX = (rotX + rotX_dev) % 360.0f;&#xD;&#xA;X: rotX = (rotX - rotX_dev) % 360.0f;&#xD;&#xA;y: rotY = (rotY + rotY_dev) % 360.0f;&#xD;&#xA;Y: rotY = (rotY - rotY_dev) % 360.0f;&#xD;&#xA;z: rotZ = (rotZ + rotZ_dev) % 360.0f;&#xD;&#xA;Z: rotZ = (rotZ - rotZ_dev) % 360.0f;&#xD;&#xA;a: transX += trans_dev;&#xD;&#xA;A: transX -= trans_dev;&#xD;&#xA;b: transZ += trans_dev;&#xD;&#xA;B: transZ -= trans_dev;&#xD;&#xA;c: transY += trans_dev;&#xD;&#xA;C: transY -= trans_dev;&#xD;&#xA;i: cameraPositionZ -= 10.0f;&#xD;&#xA;o: cameraPositionZ += 10.0f;&#xD;&#xA;S: displayScale *= displayScale_dev;&#xD;&#xA;s: displayScale /= displayScale_dev;&#xD;&#xA;q: Environment.Exit(0);"/>
+
+    </Grid>
+</Window>
