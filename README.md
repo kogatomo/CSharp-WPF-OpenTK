@@ -1,6 +1,9 @@
 # CSharp-WPF-OpenTK
 C# + WPF(.NetFramework) + OpenTK
 
+# IDE
+Visual Studio 2019
+
 # 各プロジェクトの説明
 1. キューブを表示する
 2. キューブが回転するアニメーション
